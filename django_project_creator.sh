@@ -13,9 +13,11 @@
 ## and not complain if the file already exists
 
 DIR=$(pwd)
-django_demo="$DIR/django_demo"
-mkdir -p "$django_demo"
-cd django_demo 
+echo "Enter name of Django directory":
+read filename
+django_demo="$DIR/filename"
+mkdir -p "$filename"
+cd filename 
 python3 -m venv myvenv 
 source myvenv/bin/activate 
 
