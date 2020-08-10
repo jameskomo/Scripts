@@ -7,8 +7,15 @@
 #  before creating a new Django project and app, 
 #  and starting a webserver to host the project.
 # Create a new virtual environment and folder for this demo
-mkdir celery_demo 
-cd celery_demo 
+# mkdir celery_demo 
+
+## create the directory, -p means it will create parent dirs
+## and not complain if the file already exists
+
+DIR=$(pwd)
+django_demo="$DIR/django_demo"
+mkdir -p "$django_demo"
+cd django_demo 
 python3 -m venv myvenv 
 source myvenv/bin/activate 
 
